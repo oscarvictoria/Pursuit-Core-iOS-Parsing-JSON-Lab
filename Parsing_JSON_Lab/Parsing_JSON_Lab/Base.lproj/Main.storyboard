@@ -93,10 +93,10 @@
             </objects>
             <point key="canvasLocation" x="3244.9275362318845" y="6.6964285714285712"/>
         </scene>
-        <!--View Controller-->
+        <!--Colors View Controller-->
         <scene sceneID="EZZ-2t-VV3">
             <objects>
-                <viewController id="yLt-hu-uO7" sceneMemberID="viewController">
+                <viewController id="yLt-hu-uO7" customClass="ColorsViewController" customModule="Parsing_JSON_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G5z-SE-U8f">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -129,6 +129,9 @@
                         <viewLayoutGuide key="safeArea" id="vgm-aa-eDU"/>
                     </view>
                     <navigationItem key="navigationItem" id="1Mb-o0-64l"/>
+                    <connections>
+                        <outlet property="tableView" destination="QKY-TL-3i1" id="BuI-pf-B3l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dyp-Zs-CR5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -141,10 +144,36 @@
                     <view key="view" contentMode="scaleToFill" id="8c5-xi-mGr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMy-m0-2sF">
+                                <rect key="frame" x="8" y="338.5" width="398" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aV0-av-mJV">
+                                <rect key="frame" x="8" y="188" width="398" height="50.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Jwt-LG-xOR" firstAttribute="trailing" secondItem="aMy-m0-2sF" secondAttribute="trailing" constant="8" id="Ms3-K1-o85"/>
+                            <constraint firstItem="Jwt-LG-xOR" firstAttribute="trailing" secondItem="aV0-av-mJV" secondAttribute="trailing" constant="8" id="OG7-jl-xZJ"/>
+                            <constraint firstItem="aV0-av-mJV" firstAttribute="top" secondItem="Jwt-LG-xOR" secondAttribute="top" constant="100" id="Os0-MP-9yD"/>
+                            <constraint firstItem="aMy-m0-2sF" firstAttribute="top" secondItem="aV0-av-mJV" secondAttribute="bottom" constant="100" id="PLj-80-Fqm"/>
+                            <constraint firstItem="aV0-av-mJV" firstAttribute="leading" secondItem="Jwt-LG-xOR" secondAttribute="leading" constant="8" id="aOn-hB-HgD"/>
+                            <constraint firstItem="aMy-m0-2sF" firstAttribute="leading" secondItem="Jwt-LG-xOR" secondAttribute="leading" constant="8" id="iFz-tl-fJj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Jwt-LG-xOR"/>
                     </view>
                     <navigationItem key="navigationItem" id="AMS-1G-boA"/>
+                    <connections>
+                        <outlet property="detailHexLabel" destination="aV0-av-mJV" id="RQg-Hc-4YH"/>
+                        <outlet property="detailrgbLabel" destination="aMy-m0-2sF" id="qgo-RH-WeW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cod-Yf-3i8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

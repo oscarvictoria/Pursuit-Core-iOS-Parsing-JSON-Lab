@@ -9,12 +9,26 @@
 import UIKit
 
 class DetailColorController: UIViewController {
+    
+    @IBOutlet weak var detailHexLabel: UILabel!
+    @IBOutlet weak var detailrgbLabel: UILabel!
+    
+    var color: ColorData?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateUI()
 
     }
     
-
-
+    func updateUI() {
+        guard let colors = color else {
+            fatalError("err,err")
+        }
+        var hexString = colors.hexString
+        hexString.removeFirst()
+        detailHexLabel.text = "HexString: \(hexString)"
+        detailrgbLabel.text = "Red: \(colors.rgb["r"] ?? 0), Green: \(colors.rgb["g"] ?? 0), Blue: \(colors.rgb["b"] ?? 0)"
+    }
 }
+

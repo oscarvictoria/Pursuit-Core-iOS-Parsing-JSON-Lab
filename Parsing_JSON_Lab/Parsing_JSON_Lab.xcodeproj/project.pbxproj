@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE9019B7238ED60700388C99 /* ColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9019B6238ED60700388C99 /* ColorsViewController.swift */; };
 		BEA0AFE5238D9F6B008C7395 /* WeatherFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA0AFE4238D9F6B008C7395 /* WeatherFile.swift */; };
 		BEA0AFE7238DAF16008C7395 /* DetailWeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA0AFE6238DAF16008C7395 /* DetailWeatherController.swift */; };
 		BEA0AFEB238DD68F008C7395 /* ColorFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA0AFEA238DD68F008C7395 /* ColorFile.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE9019B6238ED60700388C99 /* ColorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsViewController.swift; sourceTree = "<group>"; };
 		BEA0AFE4238D9F6B008C7395 /* WeatherFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherFile.swift; sourceTree = "<group>"; };
 		BEA0AFE6238DAF16008C7395 /* DetailWeatherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWeatherController.swift; sourceTree = "<group>"; };
 		BEA0AFEA238DD68F008C7395 /* ColorFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorFile.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				BEE8CDE2238C865100DEE822 /* SceneDelegate.swift */,
 				BEE8CDE4238C865100DEE822 /* ViewController.swift */,
 				BEE8CDE6238C865100DEE822 /* Main.storyboard */,
+				BE9019B6238ED60700388C99 /* ColorsViewController.swift */,
 				BEA0AFF0238DD97B008C7395 /* DetailRandomUserController.swift */,
 				BEA0AFEE238DD91F008C7395 /* RandomUseFile.swift */,
 				BEA0AFEC238DD862008C7395 /* DetailColorController.swift */,
@@ -168,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE9019B7238ED60700388C99 /* ColorsViewController.swift in Sources */,
 				BEA0AFE5238D9F6B008C7395 /* WeatherFile.swift in Sources */,
 				BEE8CDE5238C865100DEE822 /* ViewController.swift in Sources */,
 				BEA0AFF1238DD97B008C7395 /* DetailRandomUserController.swift in Sources */,
