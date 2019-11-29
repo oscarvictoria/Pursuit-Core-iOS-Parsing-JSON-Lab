@@ -15,7 +15,20 @@ struct RandomUserData: Codable {
 struct UserData: Codable {
     let name: [String:String]
     let email: String
+    let location: Location
+    let phone: String
+    let dob: DOB
 }
+
+struct Location: Codable {
+    let city, country, state: String
+}
+
+struct DOB: Codable {
+    let date: String
+    let age: Int 
+}
+
 
 extension RandomUserData {
     static func getData() -> [UserData] {
@@ -28,7 +41,7 @@ extension RandomUserData {
             let userData = try JSONDecoder().decode(RandomUserData.self, from: data)
             user = userData.results
         } catch {
-            print("failed to load contents")
+            print("failed to load contents \(error)")
         }
         return user
     }

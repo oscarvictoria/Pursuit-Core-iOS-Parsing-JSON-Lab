@@ -26,6 +26,15 @@ class RandomUserController: UIViewController {
     func loadData() {
         randomUser = RandomUserData.getData()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let userDataDVC = segue.destination as? DetailRandomUserController,
+            let IndexPath = tableView.indexPathForSelectedRow else {
+                fatalError("err,err")
+        }
+        let userData = randomUser[IndexPath.row]
+        userDataDVC.theData = userData
+    }
 
 }
 

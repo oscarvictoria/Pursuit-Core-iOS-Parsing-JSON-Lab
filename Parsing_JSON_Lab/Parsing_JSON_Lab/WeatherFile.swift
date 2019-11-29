@@ -20,8 +20,9 @@ struct CurrentWeather: Codable {
 
 struct TheWeather: Codable {
     let description: String
-    
+
 }
+
 
 extension WeatherData {
     static func getWeather() -> [CurrentWeather] {
